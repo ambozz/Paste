@@ -17,13 +17,13 @@ if(isset($_POST["content"])){
         if(mysqli_stmt_execute($stmt)){
             header("Location: paste.php?p={$id}");
         } else{
-            echo "Oops! Something went wrong. Please try again later.";
+            echo(CREATE_INSERT_FAILED);
         }
 
         mysqli_stmt_close($stmt);
     }
 }else{
-    exit("Error content not defined.");
+    exit(CREATE_CONTENT_NOT_DEFINED);
 }
 
 ?>
