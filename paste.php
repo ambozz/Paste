@@ -2,6 +2,24 @@
 // Import config.php
 require_once("config.php");
 
+if(!isset($_GET["p"])){
+    exit("Error p not defined.");
+}
+
+$content = "";
+
+if($stmt = mysqli_prepare($mysqli, "SELECT content FROM pastes WHERE id = ?")){
+    mysqli_stmt_bind_param($stmt, "s", $param_id);
+    $param_id = $_GET["p"];
+
+    mysqli_stmt_execute($stmt);
+    mysqli_stmt_store_result($stmt);
+    mysqli_stmt_bind_result($stmt, $temp_content);
+
+    while( $stmt->fetch() ) {
+        $content = $temp_content;
+    }
+}
 
 ?>
 <!DOCTYPE html>
@@ -19,7 +37,7 @@ require_once("config.php");
         </div>
         <div class="wrapper">
             <form>
-                <textarea name="content" readonly></textarea>
+                <textarea name="content" readonly><?php echo htmlspecialchars($content); ?></textarea>
             </form>
         </div>
         <div class="footer">
