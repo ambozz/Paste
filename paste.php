@@ -33,7 +33,7 @@ if($stmt = mysqli_prepare($mysqli, "SELECT content FROM pastes WHERE id = ?")){
     </head>
     <body>
         <div class="header">
-            <h1>Pastehub</h1>
+            <a href="/"><h1>Pastehub</h1></a>
         </div>
         <div class="wrapper">
             <form>
