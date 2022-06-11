@@ -25,7 +25,7 @@
             </form>
         </div>
         <div class="footer">
-            <h3>Made with ❤️ by Pastehub</h3>
+            <h3>Made with &#10084;&#65039; by Pastehub</h3>
         </div>
     </body>
 </html>
