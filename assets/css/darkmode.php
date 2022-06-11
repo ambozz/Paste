@@ -3,9 +3,9 @@
 //Set CSS MIME Type as Header
 header("Content-Type: text/css");
 
-//Check if cookie "darkmode" equals 1
+//Check if cookie "darkmode" exists
 //If yes show the color variables for dark mode
-if($_COOKIE["darkmode"] == 1){
+if(isset($_COOKIE["darkmode"])){
 
 ?>
 
