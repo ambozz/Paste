@@ -6,6 +6,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Pastehub</title>
         <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+        
+        <script src="assets/js/darkmode.js"></script>
+        <style id="darkmode">
+            <?php
+                include("assets/css/darkmode.php");
+            ?>
+        </style>
     </head>
     <body>
         <div class="header">
