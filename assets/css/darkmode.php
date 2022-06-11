@@ -13,6 +13,7 @@ if(isset($_COOKIE["darkmode"])){
     --textarea-border: #2c3440;
     --text-color: #ffffff;
     --text-color-hover: #e0e0e0;
+    --darkmode-button-image: url("/assets/svg/light_mode.svg");
 }
 
 <?php
