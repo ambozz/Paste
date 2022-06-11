@@ -6,13 +6,22 @@
     --primary: #1fff62;
     --primary-hover: #61ff90;
     --font: 'Source Code Pro', monospace;
+
+    --background: #ffffff;
+    --background-textarea: #ffffff;
+    --text-color: #000000;
+    --text-color-hover: #444444;
+}
+
+body {
+    background-color: var(--background);
 }
 
 * {
     margin: 0;
     border: 0;
     padding: 0;
-    transition: 0.3s;
+    transition: 0.2s;
 }
 
 /* Header Style */
@@ -27,6 +36,7 @@
 
 .header h1 {
     font-family: var(--font);
+    color: var(--text-color);
 }
 
 
@@ -47,6 +57,8 @@
 
 .wrapper form textarea {
     font-family: var(--font);
+    background-color: var(--background-textarea);
+    color: var(--text-color);
 
     resize: none;
     width: 800px;
@@ -55,10 +67,14 @@
 
     padding: 15px;
 
-    border-color: #000000;
+    border-color: var(--text-color);
     border-radius: 20px;
     border-width: 2px;
     border-style: solid;
+}
+
+.wrapper form textarea:focus {
+    outline: 0;
 }
 
 .wrapper button {
@@ -66,6 +82,7 @@
     font-size: 20px;
     font-family: var(--font);
     background-color: var(--primary);
+    color: var(--text-color);
 
     border-radius: 100px;
     border-width: 0;
@@ -90,13 +107,14 @@
 
 .footer h3 {
     font-family: var(--font);
+    color: var(--text-color);
 }
 
 a {
     text-decoration: none;
-    color: #000000;
+    color: var(--text-color);
 }
 
 a:hover {
-    color: #333333;
+    color: var(--text-color-hover);
 }
