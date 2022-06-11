@@ -39,6 +39,7 @@ if($stmt = mysqli_prepare($mysqli, "SELECT content FROM pastes WHERE id = ?")){
         </style>
     </head>
     <body>
+        <div class="darkmode_button" onclick="switchdarkmode();"></div>
         <div class="header">
             <a href="/"><h1>Pastehub</h1></a>
         </div>
