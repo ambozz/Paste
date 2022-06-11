@@ -5,6 +5,7 @@
 :root {
     --primary: #1fff62;
     --primary-hover: #61ff90;
+    --font: 'Source Code Pro', monospace;
 }
 
 * {
@@ -25,7 +26,7 @@
 }
 
 .header h1 {
-    font-family: 'Source Code Pro', monospace;
+    font-family: var(--font);
 }
 
 
@@ -45,7 +46,7 @@
 }
 
 .wrapper form textarea {
-    font-family: 'Source Code Pro', monospace;
+    font-family: var(--font);
 
     resize: none;
     width: 800px;
@@ -63,7 +64,7 @@
 .wrapper button {
     padding: 10px 30px 10px 30px;
     font-size: 20px;
-    font-family: 'Source Code Pro', monospace;
+    font-family: var(--font);
     background-color: var(--primary);
 
     border-radius: 100px;
@@ -88,7 +89,7 @@
 }
 
 .footer h3 {
-    font-family: 'Source Code Pro', monospace;
+    font-family: var(--font);
 }
 
 a {
