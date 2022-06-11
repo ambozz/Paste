@@ -11,6 +11,7 @@
     margin: 0;
     border: 0;
     padding: 0;
+    transition: 0.3s;
 }
 
 /* Header Style */
