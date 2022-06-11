@@ -9,6 +9,7 @@
 
     --background: #ffffff;
     --background-textarea: #ffffff;
+    --textarea-border: #000000;
     --text-color: #000000;
     --text-color-hover: #444444;
 }
@@ -67,7 +68,7 @@ body {
 
     padding: 15px;
 
-    border-color: var(--text-color);
+    border-color: var(--textarea-border);
     border-radius: 20px;
     border-width: 2px;
     border-style: solid;
