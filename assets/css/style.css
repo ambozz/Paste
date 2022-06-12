@@ -56,6 +56,10 @@ body {
     color: var(--text-color);
 }
 
+.header h1:hover {
+    color: var(--text-color-hover);
+}
+
 
 /* Body Style */
 
