@@ -137,3 +137,46 @@ a {
 a:hover {
     color: var(--text-color-hover);
 }
+
+/* Custom Scrollbar */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 100px;
+    border-style: solid;
+    border-color: transparent;
+
+    background: var(--primary);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-hover);
+}
+
+.wrapper form textarea::-webkit-scrollbar {
+    width: 8px;
+}
+
+.wrapper form textarea::-webkit-scrollbar-track {
+    margin: 15px 0px 15px 0px;
+    background: transparent;
+}
+
+.wrapper form textarea::-webkit-scrollbar-thumb {
+    border-radius: 100px;
+    border-style: solid;
+    border-color: transparent;
+
+    background: var(--primary);
+}
+
+.wrapper form textarea::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-hover);
+}
