@@ -5,12 +5,40 @@
 :root {
     --primary: #1fff62;
     --primary-hover: #61ff90;
+    --font: 'Source Code Pro', monospace;
+
+    --background: #ffffff;
+    --background-textarea: #ffffff;
+    --textarea-border: #000000;
+    --text-color: #000000;
+    --text-color-hover: #444444;
+    --darkmode-button-image: url("/assets/svg/dark_mode.svg");
+}
+
+body {
+    background-color: var(--background);
 }
 
 * {
     margin: 0;
     border: 0;
-    padding: 0,
+    padding: 0;
+    transition: 0.2s;
+}
+
+/* Darkmode Switch Button */
+.darkmode_button {
+    cursor: pointer;
+
+    position: absolute;
+    top: 5px;
+    right: 5px;
+
+    color: var(--text-color);
+    height: 40px;
+    width: 40px;
+    background-size: 40px 40px;
+    background-image: var(--darkmode-button-image);
 }
 
 /* Header Style */
@@ -24,7 +52,12 @@
 }
 
 .header h1 {
-    font-family: 'Source Code Pro', monospace;
+    font-family: var(--font);
+    color: var(--text-color);
+}
+
+.header h1:hover {
+    color: var(--text-color-hover);
 }
 
 
@@ -44,7 +77,9 @@
 }
 
 .wrapper form textarea {
-    font-family: 'Source Code Pro', monospace;
+    font-family: var(--font);
+    background-color: var(--background-textarea);
+    color: var(--text-color);
 
     resize: none;
     width: 800px;
@@ -53,17 +88,22 @@
 
     padding: 15px;
 
-    border-color: #000000;
+    border-color: var(--textarea-border);
     border-radius: 20px;
     border-width: 2px;
     border-style: solid;
 }
 
+.wrapper form textarea:focus {
+    outline: 0;
+}
+
 .wrapper button {
     padding: 10px 30px 10px 30px;
     font-size: 20px;
-    font-family: 'Source Code Pro', monospace;
+    font-family: var(--font);
     background-color: var(--primary);
+    color: var(--text-color);
 
     border-radius: 100px;
     border-width: 0;
@@ -77,8 +117,10 @@
 /* Footer Style */
 
 .footer {
+    pointer-events: none;
+
     position: fixed;
-    bottom: 25px;
+    bottom: 10px;
     width: 100%;
     height: 50px;
     display: flex;
@@ -87,14 +129,58 @@
 }
 
 .footer h3 {
-    font-family: 'Source Code Pro', monospace;
+    font-family: var(--font);
+    color: var(--text-color);
 }
 
 a {
     text-decoration: none;
-    color: #000000;
+    color: var(--text-color);
 }
 
 a:hover {
-    color: #333333;
+    color: var(--text-color-hover);
+}
+
+/* Custom Scrollbar */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 100px;
+    border-style: solid;
+    border-color: transparent;
+
+    background: var(--primary);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-hover);
+}
+
+.wrapper form textarea::-webkit-scrollbar {
+    width: 8px;
+}
+
+.wrapper form textarea::-webkit-scrollbar-track {
+    margin: 15px 0px 15px 0px;
+    background: transparent;
+}
+
+.wrapper form textarea::-webkit-scrollbar-thumb {
+    border-radius: 100px;
+    border-style: solid;
+    border-color: transparent;
+
+    background: var(--primary);
+}
+
+.wrapper form textarea::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-hover);
 }

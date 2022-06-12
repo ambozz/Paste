@@ -1,0 +1,53 @@
+@media screen and (max-width: 900px) {
+    .wrapper form textarea {
+        width: 700px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .wrapper form textarea {
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .wrapper form textarea {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .wrapper form textarea {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .wrapper form textarea {
+        width: 330px;
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .wrapper form textarea {
+        width: 270px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .wrapper form textarea {
+        width: 220px;
+    }
+
+    .footer {
+        display: none;
+    }
+}
+
+@media screen and (max-height: 870px) {
+    .footer {
+        margin: 25px 0px 0px 0px;
+        position: relative;
+    }
+}

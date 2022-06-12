@@ -6,8 +6,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Pastehub</title>
         <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/responsive.css" rel="stylesheet" type="text/css">
+
+        <script src="assets/js/darkmode.js"></script>
+        <style id="darkmode">
+            <?php
+                include("assets/css/darkmode.php");
+            ?>
+        </style>
     </head>
     <body>
+        <div class="darkmode_button" onclick="switchdarkmode();"></div>
         <div class="header">
             <a href="/"><h1>Pastehub</h1></a>
         </div>
@@ -18,7 +27,7 @@
             </form>
         </div>
         <div class="footer">
-            <h3>Made with ❤️ by Pastehub</h3>
+            <h3>Made with &#10084;&#65039; by Pastehub</h3>
         </div>
     </body>
 </html>
