@@ -1,4 +1,4 @@
-# Pastehub
+# Paste
 
 Open source Pasting Website.
 
